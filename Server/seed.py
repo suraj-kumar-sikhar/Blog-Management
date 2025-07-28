@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from datetime import datetime
 import random
 
-client = MongoClient("mongodb+srv://surajsikhar:ZexjUF3guemq2asQ@inovaare.4c0gsrl.mongodb.net/")
+client = MongoClient("")
 db = client["blog"]         # 🔁 Replace with your DB name
 collection = db["blogs"]            # 🔁 Replace if your collection name differs
 
