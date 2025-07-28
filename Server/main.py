@@ -16,5 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the API"}
+
 app.include_router(blog_routes.router, prefix="/api/blogs", tags=["Blogs"])
 app.include_router(auth_routes.router, prefix="/api/auth", tags=["Auth"])
